@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Saira+Condensed:wght@100;200;300;400;500;600&family=Source+Code+Pro:ital,wght@1,300&family=Titillium+Web:ital,wght@0,300;0,400;1,200&display=swap');
+
+
 body {
     background-color: #1b5db3;
+    font-family:'Saira Condensed', sans-serif;;
 }
 
 header {
@@ -19,4 +23,14 @@ section {
 footer {
     color: #fdeeee;
     text-align: center;
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+#saudacao {
+    font-weight: bold;
+    font-size: 25px;
 }
