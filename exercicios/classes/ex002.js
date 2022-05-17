@@ -17,7 +17,7 @@ class ControleRemoto {
 
     // Método estático
     static trocaPilha() {
-        console.log('Trocandow');
+        console.log('trocandow');
     }
 }
 
@@ -27,5 +27,5 @@ Controle1.aumentarVolume();
 Controle1.aumentarVolume();
 Controle1.aumentarVolume();
 
-ControleRemoto.trocaPilha;
+ControleRemoto.trocaPilha();
 console.log(Controle1);
