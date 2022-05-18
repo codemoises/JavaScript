@@ -22,9 +22,10 @@ esperaAi('Conexão com o BD.', rand(1, 3))
     })
     .then(resposta => {
         console.log(resposta);
-        return esperaAi(2222, rand(1, 3));
+        return esperaAi('Dados achados.', rand(1, 3));
     })
-    .then(() => {
+    .then(resposta => {
+        console.log(resposta);
         console.log('Exibe dados na tela.');
     })
     .catch(e => {
