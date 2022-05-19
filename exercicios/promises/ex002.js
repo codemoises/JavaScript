@@ -19,38 +19,21 @@ function esperaAi(msg, tempo) {
     });
 }
 
-/*esperaAi('Conexão com o BD.', rand(1, 3))
-    .then(resposta => {
-        console.log(resposta);
-        return esperaAi('Buscando dados da base...', rand(1, 3));
-    })
-    .then(resposta => {
-        console.log(resposta);
-        return esperaAi('Dados achados.', rand(1, 3));
-    })
-    .then(resposta => {
-        console.log(resposta);
-        console.log('Exibe dados na tela.');
-    })
-    .catch(e => {
-        console.log('ERRO:', e)
-    });*/
+async function executar() {
+    try {
+        const fase1 = await esperaAi(1, rand());
+        console.log(fase1);
+        
+        const fase2 = await esperaAi('fase 2', rand());
+        console.log(fase2);
 
-    async function executar() {
-        try {
-            const fase1 = await esperaAi('fase 1', rand());
-            console.log(fase1);
-            
-            const fase2 = await esperaAi('fase 2', rand());
-            console.log(fase2);
+        const fase3 = await esperaAi('fase 3', rand());
+        console.log(fase3);
 
-            const fase3 = await esperaAi('fase 3', rand());
-            console.log(fase3);
-
-            console.log('terminamos na fase', fase3);
-        } catch(e) {
-        console.log(e);
-        }
+        console.log('terminamos na fase', fase3);
+    } catch(e) {
+    console.log(e);
     }
-    
-    executar();
+}
+
+executar();
